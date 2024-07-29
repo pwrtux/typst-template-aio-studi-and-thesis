@@ -1,4 +1,4 @@
-#import "../template/template.typ": *
+#import "../src/lib.typ": *
 
 // md in .typ umwandeln: pandoc README.md -o README.typ
 
@@ -236,7 +236,7 @@ Hierzu gehen Sie bei Abbildungen wie folgt vor:
 ```
 
 #figure(caption: "Beispielbild")[
-  #image("../manuals/certificate.png", width: 10em)
+  #image("certificate.png", width: 10em)
 ]
 
 Bei Tabellen ist die Vorgehensweise sehr ähnlich:

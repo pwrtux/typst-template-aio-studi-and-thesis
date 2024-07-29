@@ -1,17 +1,17 @@
 # aio-studi-and-thesis: All-in-one template for students and theses
 
 <p align="center">
-  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/manuals/manual-de.pdf">
-    <img alt="Manual DE" src="https://img.shields.io/website?down_message=offline&label=manual%20de&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fmanuals%2Fmanual-de.pdf" />
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/docs/manual-de.pdf">
+    <img alt="Manual DE" src="https://img.shields.io/website?down_message=offline&label=manual%20de&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fdocs%2Fmanual-de.pdf" />
   </a>
-  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/manuals/manual-en.pdf">
-    <img alt="Manual EN" src="https://img.shields.io/website?down_message=offline&label=manual%20en&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fmanuals%2Fmanual-en.pdf" />
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/docs/manual-en.pdf">
+    <img alt="Manual EN" src="https://img.shields.io/website?down_message=offline&label=manual%20en&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fdocs%2Fmanual-en.pdf" />
   </a>
-  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/examples/example-de-thesis.pdf">
-    <img alt="Example DE" src="https://img.shields.io/website?down_message=offline&label=example%20de&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fexamples%2Fexample-de-thesis.pdf" />
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/docs/example-de-thesis.pdf">
+    <img alt="Example DE" src="https://img.shields.io/website?down_message=offline&label=example%20de&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fdocs%2Fexample-de-thesis.pdf" />
   </a>
-  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/examples/example-en-thesis.pdf">
-    <img alt="Example EN" src="https://img.shields.io/website?down_message=offline&label=example%20en&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fexamples%2Fexample-en-thesis.pdf" />
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/docs/example-en-thesis.pdf">
+    <img alt="Example EN" src="https://img.shields.io/website?down_message=offline&label=example%20en&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fdocs%2Fexample-en-thesis.pdf" />
   </a>
   <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/LICENSE">
     <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-brightgreen">
@@ -44,9 +44,9 @@ Typst will create a new directory with all the files needed to get you started.
 
 ## Usage
 
-The template ([rendered PDF (DE)](examples/example-de-thesis.pdf)) contains thesis writing advice (in German) as example content.
+The template ([rendered PDF (DE)](docs/example-de-thesis.pdf)) contains thesis writing advice (in German) as example content.
 
-If you are looking for the details of this template package's function, take a look at the [german manual](manuals/manual-de.pdf) or the [english manual](manuals/manual-en.pdf).
+If you are looking for the details of this template package's function, take a look at the [german manual](docs/manual-de.pdf) or the [english manual](docs/manual-en.pdf).
 
 ## Example configuration
 

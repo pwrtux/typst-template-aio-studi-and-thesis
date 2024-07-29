@@ -1,4 +1,4 @@
-#import "../template/template.typ": *
+#import "../src/lib.typ": *
 
 #show: project.with(
   lang: "de",
