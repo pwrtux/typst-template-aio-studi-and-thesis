@@ -1,64 +1,74 @@
-# The `my-package` Package
-<div align="center">Version 0.1.0</div>
+# aio-studi-and-thesis: All-in-one template for students and theses
 
-A short description about the project and/or client.
+<p align="center">
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/manuals/manual-de.pdf">
+    <img alt="Manual DE" src="https://img.shields.io/website?down_message=offline&label=manual%20de&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fmanuals%2Fmanual-de.pdf" />
+  </a>
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/manuals/manual-en.pdf">
+    <img alt="Manual EN" src="https://img.shields.io/website?down_message=offline&label=manual%20en&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fmanuals%2Fmanual-en.pdf" />
+  </a>
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/examples/example-de-thesis.pdf">
+    <img alt="Example DE" src="https://img.shields.io/website?down_message=offline&label=example%20de&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fexamples%2Fexample-de-thesis.pdf" />
+  </a>
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/examples/example-en-thesis.pdf">
+    <img alt="Example EN" src="https://img.shields.io/website?down_message=offline&label=example%20en&up_color=007aff&up_message=online&url=https%3A%2F%2Fgithub.com%2Ffuchs-fabian%2Ftypst-template-aio-studi-and-thesis%2Fblob%2Fmain%2Fexamples%2Fexample-en-thesis.pdf" />
+  </a>
+  <a href="https://github.com/fuchs-fabian/typst-template-aio-studi-and-thesis/blob/main/LICENSE">
+    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  </a>
+</p>
 
-## Template adaptation checklist
+This template can be used for extensive documentation as well as for final theses such as bachelor theses.
 
-- [ ] Fill out `README.md`
-  - Change the `my-package` package name, including code snippets
-  - Check section contents and/or delete sections that don't apply
-- [ ] Check and/or replace `LICENSE` by something that suits your needs
-- [ ] Fill out `typst.toml`
-  - See also the [typst/packages README](https://github.com/typst/packages/?tab=readme-ov-file#package-format)
-- [ ] Adapt Repository URLs in `CHANGELOG.md`
-  - Consider only committing that file with your first release, or removing the "Initial Release" part in the beginning
-- [ ] Adapt or deactivate the release workflow in `.github/workflows/release.yml`
-  - to deactivate it, delete that file or remove/comment out lines 2-4 (`on:` and following)
-  - to use the workflow
-    - [ ] check the values under `env:`, particularly `REGISTRY_REPO`
-    - [ ] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_REPO`
-    - [ ] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token
+It is characterised by the fact that it is highly customisable despite the predefined design.
 
-    if configured correctly, whenever you create a tag `v...`, your package will be pushed onto a branch on the `REGISTRY_REPO`, from which you can then create a pull request against [typst/packages](https://github.com/typst/packages/)
-- [ ] remove/replace the example test case
-- [ ] (add your actual code, docs and tests)
-- [ ] remove this section from the README
+Initially, all template parameters are optional by default. It is then suitable for documentation.
+To make it suitable for theses, only one parameter needs to be changed.
+
+## ⚠️ **Disclaimer - Important!**
+
+- It is a template and does not have to meet the exact requirements of your university
+- It is only supported in German and English (Default setting: German)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on the typst web app. Perhaps a short code example on importing the package and a very simple teaser usage.
+You can use this template in the Typst web app by clicking “Start from template” on the dashboard and searching for `aio-studi-and-thesis`.
 
-```typ
-#import "@preview/my-package:0.1.0": *
+Alternatively, you can use the CLI to kick this project off using the command
 
-#show: my-show-rule.with()
-#my-func()
+```bash
+typst init @preview/aio-studi-and-thesis
 ```
 
-### Installation
-
-A step by step guide that will tell you how to get the development environment up and running. This should example how to clone the repo and where to (maybe a link to the typst documentation on it), along with any pre-requisite software and installation steps.
-
-```
-$ First step
-$ Another step
-$ Final step
-```
+Typst will create a new directory with all the files needed to get you started.
 
 ## Usage
 
-A more in-depth description of usage. Any template arguments? A complicated example that showcases most if not all of the functions the package provides? This is also an excellent place to signpost the manual.
+The template ([rendered PDF (DE)](examples/example-de-thesis.pdf)) contains thesis writing advice (in German) as example content.
+
+If you are looking for the details of this template package's function, take a look at the [german manual](manuals/manual-de.pdf) or the [english manual](manuals/manual-en.pdf).
+
+## Example configuration
 
 ```typ
-#import "@preview/my-package:0.1.0": *
+#import "@preview/aio-studi-and-thesis: *
 
-#let my-complicated-example = ...
+#show: project.with(
+  lang: "de",
+  authors: (
+    (name: "Firstname Lastname"),
+  ),
+  title: "Title",
+  subtitle: "Subtitle",
+  cover-sheet: (
+    cover-image: none,
+    description: []
+  )
+)
 ```
 
-## Additional Documentation and Acknowledgments
+## Donate with [PayPal](https://www.paypal.com/donate/?hosted_button_id=4G9X8TDNYYNKG)
 
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
+If you think this template is useful and saves you a lot of work and nerves (Word and LaTex can be very tiring) and lets you sleep better, then a small donation would be very nice.
+
+[![Paypal](https://www.paypalobjects.com/de_DE/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=4G9X8TDNYYNKG)
