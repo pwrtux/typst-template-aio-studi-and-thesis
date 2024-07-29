@@ -48,6 +48,8 @@ The template ([rendered PDF (DE)](docs/example-de-thesis.pdf)) contains thesis w
 
 If you are looking for the details of this template package's function, take a look at the [german manual](docs/manual-de.pdf) or the [english manual](docs/manual-en.pdf).
 
+> Roboto is used as the default font. Please note accordingly if you want to use exactly this font.
+
 ## Example configuration
 
 ```typ
