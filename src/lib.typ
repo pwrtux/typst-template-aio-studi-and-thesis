@@ -387,18 +387,16 @@
   
   counter(page).update(1)
 
-  let todos() = {
-    locate(loc => {
-      let elems = query(<todo>, loc)
-    
-      if elems.len() == 0 { return }
+  let todos() = context {
+    let elems = query(<todo>)
 
-      heading(depth: 1)[ TODOs ]
-    
-      for body in elems {
-        text([+ #link(body.location(), body.text)], red)
-      }
-    })
+    if elems.len() == 0 { return }
+
+    heading(depth: 1)[ TODOs ]
+  
+    for body in elems {
+      text([+ #link(body.location(), body.text)], red)
+    }
   }
 
   if show-list-of-todos { todos() }
