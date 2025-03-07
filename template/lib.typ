@@ -1,1 +1,2 @@
-#import "@preview/aio-studi-and-thesis:0.1.0": *
+// changed from @preview to @local for testing
+#import "@local/aio-studi-and-thesis:0.1.1": *

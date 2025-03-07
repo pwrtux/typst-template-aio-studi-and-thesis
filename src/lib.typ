@@ -109,8 +109,8 @@
   
   body
 ) = {
-  import "@preview/hydra:0.5.1": hydra
-  import "@preview/glossarium:0.5.4": make-glossary as make-list-of-abbreviations, print-glossary as print-list-of-abbreviations
+  import "@preview/hydra:0.6.0": hydra
+  import "@preview/glossarium:0.5.4": make-glossary as make-list-of-abbreviations, print-glossary as print-list-of-abbreviations, register-glossary
   
   import "dictionary.typ": *
   import "cover_sheet.typ": *
@@ -141,6 +141,9 @@
   use-dictionary()
   
   show: make-list-of-abbreviations
+
+  register-glossary(list-of-abbreviations)
+
   show: codly-init.with()
 
   if is-not-none-or-empty(date) == false {
