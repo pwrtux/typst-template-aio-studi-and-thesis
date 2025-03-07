@@ -110,7 +110,7 @@
   body
 ) = {
   import "@preview/hydra:0.5.1": hydra
-  import "@preview/glossarium:0.4.1": make-glossary as make-list-of-abbreviations, print-glossary as print-list-of-abbreviations
+  import "@preview/glossarium:0.5.4": make-glossary as make-list-of-abbreviations, print-glossary as print-list-of-abbreviations
   
   import "dictionary.typ": *
   import "cover_sheet.typ": *
